@@ -8,6 +8,7 @@
     "naumovs.color-highlight",
     "slevesque.shader",
     "raczzalan.webgl-glsl-editor",
-    "Gruntfuggly.todo-tree"
+    "Gruntfuggly.todo-tree",
+    "vivaxy.vscode-conventional-commits"
   ]
 }
