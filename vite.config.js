@@ -22,7 +22,8 @@ export default defineConfig({
         chunkSizeWarningLimit: 1024
     },
     server: {
-        open: true
+        open: true,
+        allowedHosts: ['.trycloudflare.com']
     },
     plugins: [
         viteStaticCopy({

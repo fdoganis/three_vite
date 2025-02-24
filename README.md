@@ -66,7 +66,7 @@ npm run dev
 - run `cloudflared` tunnel
 
 ```bash
-cloudflared --url http://localhost:5173/
+cloudflared tunnel --url http://localhost:5173/
 ```
 
 This will create a random temporary address ending in `*.trycloudflare.com`
