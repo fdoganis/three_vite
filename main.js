@@ -11,7 +11,7 @@ import {
   Mesh,
   MeshNormalMaterial,
   AmbientLight,
-  Clock
+  Timer
 } from 'three';
 
 // If you prefer to import the whole library, with the THREE prefix, use the following line instead:
@@ -93,15 +93,17 @@ loadData();
 camera.position.z = 3;
 
 
-const clock = new Clock();
+const timer = new Timer();
+timer.connect(document);
 
 // Main loop
 const animation = () => {
 
   renderer.setAnimationLoop(animation); // requestAnimationFrame() replacement, compatible with XR 
 
-  const delta = clock.getDelta();
-  const elapsed = clock.getElapsedTime();
+  //const delta = timer.getDelta();
+  timer.update();
+  const elapsed = timer.getElapsed();
 
   // can be used in shaders: uniforms.u_time.value = elapsed;
 
